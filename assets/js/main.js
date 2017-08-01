@@ -12,11 +12,20 @@ $(function() {
     $('.input-channel').val(null);
   });
 
+  $('.append-row').on('click', '.btn-delete', function() {
+    $(this).parents('.col-without-padding').remove();
+  });
+
   function _addIframe(_twitchChannel) {
     $('.append-row').append(
       $('<div>')
         .addClass('col-md-3 col-without-padding')
         .append(
+        $('<div>').addClass('row').append(
+          $('<div>').addClass('col-md-12 text-center').append(
+            $('<button>').addClass('btn-delete btn btn-danger').text('Borrar')
+          )
+        ),
         $('<iframe>')
           .addClass('full-width')
           .attr({
