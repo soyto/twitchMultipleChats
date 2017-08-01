@@ -15,14 +15,14 @@ $(function() {
   function _addIframe(_twitchChannel) {
     $('.append-row').append(
       $('<div>')
-        .addClass('col-md-3')
+        .addClass('col-md-3 col-without-padding')
         .append(
         $('<iframe>')
+          .addClass('full-width')
           .attr({
             'frameborder': 0,
             'scrolling': 'true',
-            'src': _twitchChannel + '/chat?darkpopout',
-            'height': 600
+            'src': _twitchChannel + '/chat?darkpopout'
           })
       )
     );
