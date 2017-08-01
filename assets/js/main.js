@@ -15,7 +15,7 @@ $(function() {
   function _addIframe(_twitchChannel) {
     $('.append-row').append(
       $('<div>')
-        .addClass('col-md-4')
+        .addClass('col-md-3')
         .append(
         $('<iframe>')
           .attr({
