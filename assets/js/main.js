@@ -21,7 +21,7 @@ $(function() {
           .attr({
             'frameborder': 0,
             'scrolling': 'true',
-            'src': _twitchChannel + '/chat',
+            'src': _twitchChannel + '/chat?darkpopout',
             'height': 600
           })
       )
